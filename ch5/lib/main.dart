@@ -1,4 +1,6 @@
+import 'package:ch5/AlertDlg.dart';
 import 'package:ch5/CheckBoxTest.dart';
+import 'package:ch5/DatePickerTest.dart';
 import 'package:ch5/DropDownTest.dart';
 import 'package:ch5/RadioListTest.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +28,9 @@ class MyApp extends StatelessWidget {
       //home: TextFieldTest(),
       //home: CheckBoxTest(),
       //home: RadioListTest(),
-      home: DropDownTest(),
+      //home: DropDownTest(),
+      //home: AlertDlg(),
+      home: DatePickerTest(),
     );
     return m;
   }
