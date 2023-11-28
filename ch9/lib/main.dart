@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      //home: Bmimain(),
-      home: BmiResult(height: 1.0, weight: 2.0),
+      home: Bmimain(),
+      //home: BmiResult(height: 1.0, weight: 2.0),
       //home: MyCustomForm(),
       //home: Scaffold(
         //appBar: AppBar(
