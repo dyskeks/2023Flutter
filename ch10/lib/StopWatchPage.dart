@@ -73,9 +73,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
                   width: 100,
                   height: 200,
                   child: ListView(
-                    children: [
-
-                    ],
+                    children: _LapTimes.map((time) => Text(time)).toList(),
                   ),
                 ),
               ],
@@ -84,7 +82,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
               left: 10,
               bottom: 10,
               child: FloatingActionButton(
-                  onPressed: _reset(),
+                  onPressed: _reset,
                 child: Icon(Icons.rotate_left),
               ),
             ),
@@ -92,7 +90,11 @@ class _StopWatchPageState extends State<StopWatchPage> {
               right: 10,
               bottom: 10,
               child: ElevatedButton(
-                  onPressed: (){},
+                  onPressed: (){
+                    setState(() {
+                      _recordLapTime('$sec.$hundredth');
+                    });
+                  },
                   child: Text("랩타임"),
               ),
             ),
@@ -135,5 +137,9 @@ class _StopWatchPageState extends State<StopWatchPage> {
       _LapTimes.clear();
       _time = 0;
     });
+  }
+
+  void _recordLapTime(String time){
+    _LapTimes.insert(0, '{$_LapTimes.length + 1}등 $time');
   }
 }
