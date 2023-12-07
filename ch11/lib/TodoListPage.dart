@@ -69,7 +69,7 @@ class _TodoListPageState extends State<TodoListPage> {
     final todo = Todo(doc['title'], isDone: doc['isDone']);
 
     return ListTile(
-      onTap: () => _toggleToDo(todo),
+      onTap: () => _toggleToDo(doc),
       title: Text(
         todo.title,
         style: todo.isDone
@@ -99,7 +99,6 @@ class _TodoListPageState extends State<TodoListPage> {
     FirebaseFirestore.instance.collection('todo').doc(doc.id).update(
       {'isDone' : !doc['isDone']}
     );
-
   }
 }
 
