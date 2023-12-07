@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "883308109597",
+    "project_id": "my-todo-list-ade44",
+    "storage_bucket": "my-todo-list-ade44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883308109597:android:d21df701ad42aed88a8bf4",
+        "android_client_info": {
+          "package_name": "com.example.ch11"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm5K9FutZZ6SFhOLs9AAPmJcAPbktZeTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

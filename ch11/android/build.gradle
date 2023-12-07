@@ -2,7 +2,7 @@ buildscript {
     ext.kotlin_version = '1.7.10'
     repositories {
         google()
-        mavenCentral()
+        mavennpm install -g firebase-toolsflutterfire configure --project=my-todo-list-ade44Central()
     }
 
     dependencies {
